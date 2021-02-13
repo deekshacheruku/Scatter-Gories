@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    background-image: url(/assets/bg.jpg);
+    animation: animation 100s linear infinite;
+    color: turquoise;
+}
+
+@keyframes animation {
+    100%{
+     background-position:0px -3000px;
+   }
+}
+
+.container,.Instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 700px;
+    height: 240px;
+}
+
+.Instructions{
+    margin: 10px;
+}
+
+li{
+    list-style: none;
+    font-size: 18pt;
+    padding: 5px;
+}
+
+li:first-child{
+    font-size: 30pt;
+    justify-content: center;
+}
+
+#label,#gameelements,#status{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-between;
+    font-size: 20pt;
+    font-weight: 800;
+    padding: 10px;
+}
+
+ #levellabel,#timerlabel,#scorelabel,#textfields,#buttonslabel{
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+}
+
+#levellabel{
+    align-self: left;
+}
+
+#timerlabel{
+    margin-left: auto;
+}
+
+#scorelabel{
+    margin-left: 180px;
+} 
+
+#startingLetter,#status,#word{
+    font-size: 15pt;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+#textfields,#buttonslabel,#status{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+input{
+    height: 20px;
+    margin: 5px;
+    border: 4px solid turquoise;
+    border-radius: 10px;
+}
+
+#buttons{
+    cursor: pointer;
+    height: 40px;
+    padding: 4px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12pt;
+    margin: 4px 2px;
+    border: 4px solid turquoise;
+}

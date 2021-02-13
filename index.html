@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scatter-Gories</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/app.js" ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <div id="label">
+                <div id="levellabel">Level:&nbsp;<div id="level">0</div></div>
+                <div id="scorelabel">Score:&nbsp;<div id="score">0</div></div>
+                <div id="timerlabel">CountDown:&nbsp; <div id="timer">0:00</div></div>
+            </div>
+            <div id="gameelements">
+                <div id="word"></div>
+                <div id="startingLetter"></div>
+            </div>
+            <div id="textfields"></div>
+            <div id="status"></div>
+            <div id="buttonslabel">
+                <input type="button" id="buttons" onclick="displayWordDetails()" value="Give Me A Word"></input>
+                <input type="button" id="buttons" onclick="checkDetails()" value="Check My Answers"></input>
+                <input type="button" id="buttons" onclick="requestNewWord()" value="New Word"></input>
+            </div>
+        </div>
+        <div class="Instructions">
+            <ol id="rules">
+                <center><li>Rules are simple!</li></center>
+                <li>You will be given a Word along with a Starting letter.</li>
+                <li>The latter will be given only when you pass certain levels.</li>
+                <li>Your job is to find and write the related words and validate the answers.</li>
+                <li>If you pass the validation then you are promoted to next level else you can try your luck again!</li>
+                <li>You can request for another word by clicking on New Word but your score will be reduced by 5 points</li>
+                <li>Remember! You have only a minute to do so.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
